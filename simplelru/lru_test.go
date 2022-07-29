@@ -3,6 +3,16 @@ package simplelru
 import "testing"
 
 func TestLRU(t *testing.T) {
+	testLRU(t)
+}
+
+func BenchmarkLRU(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		testLRU(b)
+	}
+}
+
+func testLRU(t testing.TB) {
 	evictCounter := 0
 	onEvicted := func(k int, v int) {
 		if k != v {
