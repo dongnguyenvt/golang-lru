@@ -1,5 +1,6 @@
 golang-lru
 ==========
+This repo is hard-fork of github.com/hashicorp/golang-lru to add generic interface which only available on go 1.18+
 
 This provides the `lru` package which implements a fixed-size
 thread safe LRU cache. It is based on the cache in Groupcache.
@@ -7,7 +8,7 @@ thread safe LRU cache. It is based on the cache in Groupcache.
 Documentation
 =============
 
-Full docs are available on [Godoc](http://godoc.org/github.com/hashicorp/golang-lru)
+Full docs are available on [Godoc](http://godoc.org/github.com/dongnguyenvt/golang-lru)
 
 Example
 =======

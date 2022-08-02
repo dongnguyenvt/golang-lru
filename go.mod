@@ -1,4 +1,4 @@
-module github.com/hashicorp/golang-lru
+module github.com/dongnguyenvt/golang-lru
 
 go 1.18
 
